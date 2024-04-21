@@ -1,0 +1,360 @@
+
+      /* Styles for navbar, icons, and text */
+      body {
+        height: 100vh;
+      }
+      .navbarDiv {
+        background-color: #273454;
+        height: 130px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        font-family: sans-serif;
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+
+      .left-side p {
+        margin: 0;
+        padding-bottom: 10px;
+      }
+
+      .bold-text {
+        font-weight: bold;
+        color: white;
+      }
+
+      .small-text {
+        line-height: 0;
+        font-size: 12px;
+        color: gray;
+      }
+
+      .right-side {
+        display: flex;
+        height: fit-content;
+        color: white;
+        align-items: center;
+      }
+
+      .right-side div {
+        margin-right: 10px;
+      }
+
+      .txtDate p {
+        margin: 0;
+      }
+
+      .bellIcon {
+        margin-left: 25px;
+      }
+
+      /* Styles for libraryDiv */
+      .libraryDiv {
+        position: relative;
+        top: -50px; /* Adjust this value as needed to position it slightly above the navbar */
+        display: flex;
+        overflow-x: auto;
+        width: calc(100%);
+        padding-bottom: 10px;
+      }
+
+      .savedLibrary {
+        width: 250px;
+        background-color: white;
+        border-radius: 10px;
+        height: 180px;
+        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding-left: 20px;
+        flex: 0 0 auto;
+      }
+      .savedtxt {
+        color: black;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 18px;
+        margin: 5px 0;
+      }
+      /* Styles for subdiv */
+      .subdiv {
+        width: 100%;
+
+        display: flex;
+      }
+      .subdiv2 {
+        width: 70%;
+        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-bottom: 10px;
+      }
+      .sliderdiv {
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .recentReleaseDiv {
+        width: 30%;
+        box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+
+        padding: 10px;
+        margin-right: 25px;
+      }
+      .leftArrow {
+        width: 30px;
+        height: 28px;
+        background-color: black;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      .rightArrow {
+        width: 30px;
+        height: 28px;
+        background-color: black;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+      .slideContentDiv {
+        width: 100%;
+
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+      }
+      .setCardW {
+        width: 23%;
+        margin: 1%;
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+      }
+      .swiper-pagination {
+        position: relative;
+      }
+      .viewMoreBtnDiv {
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+      }
+      .viewMoreBtnDiv button {
+        width: 150px;
+        height: 50px;
+        background-color: #273454;
+        font-size: 16px;
+        color: white;
+        border-radius: 10px;
+      }
+      .releaseTopMain {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        border-bottom: solid 1px;
+        align-items: center;
+      }
+      .releasetxtDiv {
+        width: 50%;
+        font-size: 18px;
+        font-weight: bold;
+        color: blue;
+      }
+      .spinnerDiv {
+        width: 50%;
+      }
+      .select {
+        width: 80%;
+        position: relative;
+        display: inline-block;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Style for the select element */
+      .select select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        padding: 10px 30px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 16px;
+        color: #333;
+        cursor: pointer;
+        width: 100%;
+        outline: none;
+      }
+
+      /* Style for the arrow icon */
+      .select::after {
+        content: "\25BC"; /* Downward arrow Unicode */
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 16px;
+        color: #666;
+      }
+
+      /* Style for the select options */
+      .select select option {
+        background-color: #fff;
+        color: #333;
+      }
+
+      /* Hover effect for the select */
+      .select:hover {
+        border-color: #999;
+      }
+
+      /* Focus effect for the select */
+      .select select:focus {
+        border-color: #007bff;
+      }
+      .releaseNoteseDivMain {
+        width: 100%;
+        display: block;
+        max-height: 400px; /* Set maximum height */
+        overflow-y: auto;
+      }
+      .releasesub1 {
+        width: 40px;
+
+        height: auto;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .circleView {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: gray;
+
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .virticalLineDiv {
+        background-color: gray;
+        width: 2px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .releasesub2 {
+        display: flex;
+        width: 100%;
+      }
+      .completeNoteDiv {
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 10px;
+      }
+      .DateBluetxt {
+        color: blue;
+        font-weight: bold;
+        font-family: sans-serif;
+      }
+      .Headingtxt {
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 20px;
+      }
+      .desctxt {
+        font-family: sans-serif;
+        font-size: 14px;
+      }
+      .topdivcont {
+        margin-left: 60px;
+      }
+      .menuDiv {
+        width: 100%;
+      }
+      .menuLogo {
+        width: 40px;
+        height: 40px;
+        background-color: #273454;
+        text-align: center;
+        align-content: center;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 50%;
+      }
+      .sidebaritemsdiv {
+        margin-top: 80px;
+        width: 100%;
+      }
+      .menuDiv1 img {
+        width: 24px;
+        height: 24px;
+      }
+      .menuDiv1 {
+        margin-top: 20px;
+      }
+      .w3-bar-block .w3-bar-item {
+        text-align: center;
+      }
+      @media only screen and (max-width: 600px) {
+ .subdiv{
+  width: 100%;
+  display: block;
+ }
+ .subdiv2{
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+ }
+ .leftArrow, .rightArrow{
+  display: none;
+ }
+ .recentReleaseDiv{
+  margin-top: 30px;
+  width: fit-content;
+  margin-left: 5%;
+  margin-right: 5%;
+ }
+ .navbarDiv{
+  font-size: 8px;
+ }
+ .icon{
+  width: 16px;
+  height: 16px;
+  
+ }
+ .bellIcon{
+  margin-left: 1px;
+ }
+ .right-side div {
+    margin-right: 1px;
+}
+.releasetxtDiv{
+  font-size: 12px;
+  width: 40%;
+}
+.spinnerDiv{
+  width: 60%;
+}
+}
